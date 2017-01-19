@@ -36,7 +36,7 @@ MostYardsScore <- function(games) {
   
   passing.yards <- games$passing_yards
   rushing.yards <- games$rushing_yards
-  combined <- passing.yards + rushing.yards
+  combined.yards <- passing.yards + rushing.yards
   
   max.yards <- max(combined.yards)
   opponent.team <- opponent[combined.yards == max.yards]

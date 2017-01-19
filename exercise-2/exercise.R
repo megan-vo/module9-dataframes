@@ -53,9 +53,10 @@ mean.increase <- mean(salaries$raise)
 ### Bonus ###
 
 # Write a .csv file of your salaries to your working directory
-
+write.csv(salaries, 'salries.csv')
 
 # For people who did not get a raise, how much money did they lose?
-
+mean.loss <- mean(salaries$raise[salaries$got.raise == FALSE])
+mean.loss
 
 # Is that what you expected them to lose based on how you generated their salaries?

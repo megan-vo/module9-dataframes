@@ -3,17 +3,17 @@
 # Read the data from the `data/gates_money.csv` file into a variable called
 # `grants` using the `read.csv()` function
 # Be sure to set your working directory, and do NOT treat strings as factors!
-
+grants <- read.csv('data/gates_money.csv', stringsAsFactors = FALSE)
 
 # Use the View function to look at the loaded data
-
+View(grants)
 
 # Create a variable `organization` as the `organizationtotal.amount` column of the dataset
-
+organization <- grants$organizationatotal.amount
 
 # Confirm that the "organization" column is a vector using the `is.vector()`
 # This is a useful debugging tip if you hit errors later!
-
+is.vector(organization)
 
 # What was the mean grant value?
 

@@ -1,20 +1,19 @@
-# Exercise 5: Gates Foundation Educational Grants
-
 # Read in the female baby names .csv file into a variable called `female.names`
 # Remember to not load the strings as factors!
-
+female.names <- read.csv('data/female_names.csv', stringsAsFactors=FALSE)
 
 # Create a vector `years` as the year column of the dataset
-
+years <- female.names$year
 
 # Create a vector `names` as the name column of the datset
-
+names <- female.names$name
+names
 
 # Create a vector `props` as the proportion column of the dataset
-
+props <- female.names$proportion
 
 # Create a vector `names.2013` as your names vector where your years vector is 2013
-
+names.2013 <- names[years == 2014]
 
 # Create a vector `prop.2013` as the your props vector where your years vecctor is 2013
 
